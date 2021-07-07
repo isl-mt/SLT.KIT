@@ -3,7 +3,7 @@ From nvidia/cuda:${CUDA}-devel
 ARG CUDA
 
 RUN apt-get update && apt-get install -y python-pip python-dev build-essential libyaml-dev git wget xml-twig-tools libsort-naturally-perl default-jre sox cmake mercurial
-RUN pip install --upgrade pip
+RUN pip install --upgrade pip==20.2.2
 RUN cd /opt && \
     git clone https://github.com/isl-mt/SLT.KIT.git
 #PyTorch
